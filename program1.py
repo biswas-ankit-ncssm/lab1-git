@@ -1,3 +1,5 @@
+import sys
+
 def money_to_num(mon):
     return int(float(mon[1:])*100)
 
@@ -27,7 +29,7 @@ def return_statement(cash):
         print(f"{cash} pennies")
 
 def main():
-    mon = input()
+    mon = sys.argv[1]
     if error_checking(mon):
         cash = money_to_num(mon)
         return_statement(cash)
