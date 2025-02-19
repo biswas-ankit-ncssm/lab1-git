@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="test">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br>
+        
+        <label>Color:</label>
+        <input type="color" id="color">
+        <br>
+        
+        <label>Number of Rows:</label>
+        <input type="number" id="rows">
+        <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="square"></div>
+
+    <script>
+        document.getElementById('test').onsubmit = function(e) {
+            var name = document.getElementById('name').value;
+            var color = document.getElementById('color').value;
+            
+            var square = document.getElementById('square');
+            square.style.backgroundColor = color;
+            square.innerHTML = name;
+            square.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

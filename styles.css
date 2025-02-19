@@ -1,0 +1,19 @@
+form {
+    border: 1px solid black;
+    padding: 20px;
+    width: 200px;
+    float: left;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+#square {
+    width: 300px;
+    height: 300px;
+    margin-left: 250px;
+    display: none;
+    text-align: center;
+    line-height: 300px;
+}
