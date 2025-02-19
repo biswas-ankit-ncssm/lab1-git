@@ -1,2 +1,2 @@
 # Ankit Biswas
-<b><ins>Resources</ins></b>
+<b><ins>RESOURCES</ins></b>
